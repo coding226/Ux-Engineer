@@ -1,0 +1,53 @@
+---
+
+---
+    
+<div>    
+<h2>Team members</h2>
+<form name="person-form">
+    <input class="radio-custom" type="radio" id="person0" name="employee" value="0">
+    <label class="person-list" id="sbp0" for="person0">
+        Jane Doe
+    </label>
+
+    <input class="radio-custom" type="radio" id="person1" name="employee" value="1">
+    <label class="person-list" id="sbp1" for="person1">
+        Joe Bloggs
+    </label>
+
+    <input class="radio-custom" type="radio" id="person2" name="employee" value="2">
+    <label class="person-list" id="sbp2" for="person2">
+        John Smith
+    </label>
+
+    <input class="radio-custom" type="radio" id="person3" name="employee" value="3">
+    <label class="person-list" id="sbp3" for="person3">
+        Jenny Jones
+    </label>
+
+    <input class="radio-custom" type="radio" id="person4" name="employee" value="4">
+    <label class="person-list" id="sbp4" for="person4">
+        Bob Roberts
+    </label>
+</form>
+</div>
+<style>
+    .person-list {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0.8em;
+}
+
+.radio-custom {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .radio-custom:checked + label {
+    color: steelblue;
+    font-weight: bold;
+  }
+
+</style>

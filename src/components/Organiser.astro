@@ -1,0 +1,58 @@
+---
+
+---
+
+<div>
+
+<h2 id="active-person">Pick a team member from the list </h2>
+<p id="alertstart">No member selected</p>
+<form id="roles-form" action="#">
+
+        <!-- 
+            Roles block
+         -->
+        <table class="ui table" width="100%" style="text-align:left; margin-bottom:150px;">
+            <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                </tr>
+            </thead>
+            <tbody id="role-table-body">
+                <!-- Comes from selected person's data -->
+            </tbody>
+            <tfoot>
+                <tr id="add-role">
+                    <td>
+                        <select class="ui dropdown" name="role-select" id="role-select">
+                            <option value>Select role</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Designer">Designer</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Product owner">Product owner</option>
+                        </select>
+                    </td>
+                    <td class="ui input">
+                        <input class="new-start-date" id="new-role-start" type="date">
+                    </td>
+                    <td class="ui input">
+                        <input style="display:none;" class="new-end-date" id="new-role-end" type="date">
+                    </td>
+                </tr>
+                <tr>
+                  <td colspan="3" id="alert" style="border-top:0;"></td>
+                </tr>
+                <tr id="add-role-btn">
+                    <td colspan="3"><button type="button" class="save-btn ui mini primary button" id="role-save">Save</button> <button type="button" class="cancel-btn mini ui button" id="cancel-btn">cancel</button></td>
+                </tr>
+                <tr id="select-action">
+                      <td colspan="3" ><button type="button" class="assign-btn ui mini primary basic button" id="assign-btn">Assign new role</button> <button type="button" class="del-btn mini ui negative basic button" id="del-btn">End role</button></td>
+                </tr>
+
+            </tfoot>
+        </table>
+
+
+</form>
+</div>
