@@ -15,6 +15,7 @@ function useGroupList(user, groups) {
                 let data = snapshot.data();
                 setSameGroupUsers([]);
                 let temp_data = [];
+                console.log(data.groups);
                 if (data.groups.length > 0) {
                     firestore()
                         .collection('users')
